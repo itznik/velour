@@ -3,13 +3,18 @@
 @tailwind utilities;
 
 :root {
-  --background: #0b0b10;         /* Deep charcoal */
-  --foreground: #f6f1e9;         /* Warm off-white */
-  --accent: #d2b48c;             /* Soft champagne/gold */
-  --muted: #9a9183;
-  --border-subtle: rgba(242, 234, 220, 0.06);
-  --radius-xl: 1.5rem;
-  --nav-height: 4.25rem;
+  --background: #0E0E11;
+  --foreground: #FAF7F2;
+  --subtle-text: #CDC7BE;
+  --muted: #A7A29A;
+  
+  --accent: #E7E2DA;       /* soft ivory, NOT gold */
+  --accent-hover: #F1ECE5;
+
+  --border-subtle: rgba(255, 255, 255, 0.05);
+  --card-bg: #111114;
+  --radius-xl: 1.25rem;
+  --nav-height: 4rem;
 }
 
 /* Global smoothing (no @apply here) */
