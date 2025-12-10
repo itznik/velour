@@ -8,8 +8,8 @@ export const Hero = () => {
     <section id="hero" className="relative overflow-hidden">
       <div className="lux-container relative flex flex-col items-start gap-10 pb-20 pt-16 md:flex-row md:items-center md:py-24">
         {/* Background glow shapes */}
-        <div className="pointer-events-none absolute -left-40 top-0 h-72 w-72 rounded-full bg-[var(--accent)]/15 blur-[80px]" />
-        <div className="pointer-events-none absolute -right-32 bottom-0 h-80 w-80 rounded-full bg-[#e2d5c0]/8 blur-[90px]" />
+        <div className="absolute inset-0 bg-gradient-to-b from-[#0E0E11] via-[#111114] to-[#0E0E11]"></div>
+<div className="absolute inset-0 bg-[radial-gradient(circle_at_center,#1C1B1F_0%,transparent_60%)] opacity-40"></div>
 
         {/* Left column: text */}
         <motion.div
@@ -22,20 +22,14 @@ export const Hero = () => {
             House of Velour · Eau de Parfum
           </p>
 
-          <h1 className="font-display text-4xl leading-tight tracking-[0.08em] md:text-5xl lg:text-6xl">
-            Luxury that{" "}
-            <span className="relative inline-block">
-              lingers
-              <span className="absolute -bottom-2 left-0 h-[1px] w-full bg-gradient-to-r from-[var(--accent)]/80 to-transparent" />
-            </span>{" "}
-            long after you’ve left.
-          </h1>
+          <h1 className="font-display text-4xl md:text-6xl leading-[1.1] text-[var(--foreground)]">
+  Luxury that <span className="italic">lingers</span> long after you’ve left.
+</h1>
 
-          <p className="text-sm leading-relaxed text-[var(--muted)] md:text-base">
-            Velour distills whispered memories, dim-lit evenings and quiet
-            confidence into contemporary compositions meant to become your
-            signature.
-          </p>
+          <p className="text-[var(--subtle-text)] leading-relaxed max-w-lg">
+  Velour distills intimate evenings, whispered memories, 
+  and quiet confidence into contemporary compositions.
+</p>
 
           <div className="flex flex-wrap items-center gap-4">
             <Button>Discover signature scents</Button>
