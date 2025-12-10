@@ -16,13 +16,18 @@ export const Button = forwardRef<HTMLButtonElement, ButtonProps>(
       "inline-flex items-center justify-center gap-2 rounded-full text-sm tracking-[0.08em] uppercase transition-all duration-300 focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-[var(--accent)] focus-visible:ring-offset-2 focus-visible:ring-offset-black";
 
     const variants: Record<Variant, string> = {
-      primary:
-        "bg-[var(--accent)] text-black px-6 py-3 shadow-[0_0_40px_rgba(210,180,140,0.35)] hover:shadow-[0_0_60px_rgba(210,180,140,0.5)] hover:-translate-y-0.5 active:translate-y-0 text-xs md:text-[0.72rem] font-semibold",
-      ghost:
-        "bg-transparent text-[var(--foreground)] border border-[rgba(242,234,220,0.16)] px-6 py-3 hover:bg-[rgba(242,234,220,0.04)] text-xs md:text-[0.72rem] font-medium",
-      outline:
-        "bg-transparent text-[var(--accent)] border border-[var(--accent)] px-6 py-3 hover:bg-[rgba(210,180,140,0.06)] text-xs md:text-[0.72rem] font-semibold",
-    };
+  primary:
+    "bg-[var(--accent)] text-black px-6 py-3 rounded-lg " +
+    "hover:bg-[var(--accent-hover)] transition-colors duration-300",
+
+  ghost:
+    "border border-[var(--border-subtle)] text-[var(--foreground)] px-6 py-3 rounded-lg " +
+    "hover:bg-white/5 transition-colors duration-300",
+
+  outline:
+    "border border-[var(--accent)] text-[var(--accent)] px-6 py-3 rounded-lg " +
+    "hover:bg-[var(--accent)] hover:text-black transition-colors duration-300",
+};
 
     return (
       <button
